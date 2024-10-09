@@ -37,4 +37,21 @@ public class Rezept {
         }
         System.out.println("-----------------------------");
     }
+
+    public Rezept umrechnen(int zielPersonen) {
+        Rezept neu = new Rezept();
+        neu.setName(name);
+        neu.setPersonen(zielPersonen);
+
+        double faktor = zielPersonen / (personen * 1.0);
+        Zutat[] arr = new Zutat[zutaten.length];
+
+        for (int i = 0; i < zutaten.length; i++) {
+            arr[i] = new Zutat();
+            arr[i].setName(zutaten[i].getName());
+            arr[i].setMenge((int) (zutaten[i].getMenge() * faktor));
+        }
+        neu.setZutaten(arr);
+        return neu;
+    }
 }

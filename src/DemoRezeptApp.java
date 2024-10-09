@@ -23,6 +23,9 @@ public class DemoRezeptApp {
 
         butterKeks.printRezept();
 
+        Rezept butterKeks8 = butterKeks.umrechnen(8);
+        butterKeks8.printRezept();
+
 
     }
 }
