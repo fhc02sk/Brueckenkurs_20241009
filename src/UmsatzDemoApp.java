@@ -20,13 +20,15 @@ public class UmsatzDemoApp {
 
     public static double calcAverage(double[] turnovers) {
 
+        return 0;
     }
 
-    public static double getMaximumIndex(double[] turnovers) {
-
+    public static int getMaximumIndex(double[] turnovers) {
+        return -1;
     }
 
     public static double getMaximumValue(double[] turnovers) {
 
+        return 0;
     }
 }
