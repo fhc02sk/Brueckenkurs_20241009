@@ -2,7 +2,6 @@ public class Rezept {
 
     private String name;
     private int personen;
-
     private Zutat[] zutaten;
 
     public void setZutaten(Zutat[] zutaten) {
@@ -27,5 +26,15 @@ public class Rezept {
 
     public void setPersonen(int personen) {
         this.personen = personen;
+    }
+
+    public void printRezept() {
+        System.out.println("Name: " + name);
+        System.out.println("Rezept passt für " + personen + " Personen");
+
+        for (int i = 0; i < zutaten.length; i++) {
+            zutaten[i].print();
+        }
+        System.out.println("-----------------------------");
     }
 }

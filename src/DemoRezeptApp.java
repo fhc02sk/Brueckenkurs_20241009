@@ -21,6 +21,7 @@ public class DemoRezeptApp {
         butterKeks.setPersonen(4);
         butterKeks.setZutaten(zutaten);
 
+        butterKeks.printRezept();
 
 
     }
